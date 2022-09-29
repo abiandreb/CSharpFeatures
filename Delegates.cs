@@ -2,6 +2,8 @@
 It defines return type and parameters type of the method
 */
 
+/***************************************************************************/
+
 //Basic example
 DelegateSqrt d = Square; // assign method to delegate
 int result = d(2); // Call delegate
@@ -10,6 +12,8 @@ Console.WriteLine(result);
 int Square(int x) => x * x; //Original method
 
 delegate int DelegateSqrt(int x); // Declare delegate that takes method which returns int and take int as a parameter
+
+/***************************************************************************/
 
 // Write plug-in method for delegates 
 
@@ -28,3 +32,8 @@ int Square(int x) => x * x; //Initial methods
 int Qube(int x) => x * x * x;
  
 delegate int Transformer(int x); //Delegate
+
+/***************************************************************************/
+
+// Target methods of delegate instance, static target methods
+
